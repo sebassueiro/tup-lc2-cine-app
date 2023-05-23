@@ -6,6 +6,7 @@
     <title>TUP LC2 - TP Integrador - Cine</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/index.css"/>
   </head>
 
   <body>
@@ -26,24 +27,67 @@
     <!-- Contenido principal de la página -->
     <main>
       <h2>Últimas Películas en Cartelera</h2>
+      <div id="divAgregar">
+        <p>Agregar Pelicula Favorita por Codigo</p>
+      <input type="number" >
+      <button>Agregar</button>
+      </div>
+      
       <section id="form-movie-new">
         <!--Seccion para agregar una palicula favorita por codigo-->
       </section>
       <section id="sec-messages">
-        <h5>Película agregada con éxito</h5>
-        <h5>Error: La Película seleccionada no se encuentra en la API o se produjo un error al consultar</h5>
-        <h5>La Película ingresada ya se encuentra almacenada</h5>
+        <h5 id="Success">Película agregada con éxito</h5>
+        <h5 id="Error">Error: La Película seleccionada no se encuentra en la API o se produjo un error al consultar</h5>
+        <h5 id="Warning">La Película ingresada ya se encuentra almacenada</h5>
         <!--Seccion para mensajes-->
       </section>
       <section id="sec_peliculas">
         <!--Seccion visualizacion de peliculas-->
         <div class="contenedorPeliculas" id="contenedorPeliculas">
-          <img src="img/fotoDeCreed.jpg">
+          <img src="img/fotoDeCreed.jpg" alt="foto de la pelicula de Creed">
           <h3>Creed III</h3>
           <p><b>Código:</b> 677179</p>
           <p><b>Titulo original:</b> Creed III</p>
           <p><b>Idioma original:</b> en</p>
           <p><b>Año:</b> 2023-03-01</p>
+          <button class="boton-agregar">Agregar a Favoritos</button>
+        </div>
+        <div class="contenedorPeliculas" id="contenedorPeliculas">
+          <img src="img/MarioBros.webp" alt="foto de la pelicula de Mario Bros">
+          <h3>Super Mario Bros. La pelicula</h3>
+          <p><b>Código:</b> 502356</p>
+          <p><b>Titulo original:</b> The Super Mario Bros. Movie</p>
+          <p><b>Idioma original:</b> en</p>
+          <p><b>Año:</b> 2023-04-05</p>
+          <button class="boton-agregar">Agregar a Favoritos</button>
+        </div>
+        <div class="contenedorPeliculas" id="contenedorPeliculas">
+          <img src="img/GatoBotas.webp" alt="foto de la pelicula del Gato con Botas">
+          <h3>Gato con Botas: El ultimo deseo</h3>
+          <p><b>Código:</b> 315162</p>
+          <p><b>Titulo original:</b> Fuss in Boots: The Lazz Wish</p>
+          <p><b>Idioma original:</b> en</p>
+          <p><b>Año:</b> 2022-12-07</p>
+          <button class="boton-agregar">Agregar a Favoritos</button>
+        </div>
+        <div class="contenedorPeliculas" id="contenedorPeliculas">
+          <img src="img/Shazam.jpeg" alt="foto de la pelicula de Shazam">
+          <h3>¡Shazam! La furia de los dioses</h3>
+          <p><b>Código:</b> 594767</p>
+          <p><b>Titulo original:</b> Shazam! Fury of the Gods</p>
+          <p><b>Idioma original:</b> en</p>
+          <p><b>Año:</b> 2023-03-15</p>
+          <button class="boton-agregar">Agregar a Favoritos</button>
+        </div>
+        <div class="contenedorPeliculas" id="contenedorPeliculas">
+          <img src="img/LaNina.webp" alt="foto de la pelicula de la niña de la comunion">
+          <h3>La niña de la comunion</h3>
+          <p><b>Código:</b> 1008005</p>
+          <p><b>Titulo original:</b> La niña de la comunion</p>
+          <p><b>Idioma original:</b> en</p>
+          <p><b>Año:</b> 2023-02-10</p>
+          <button class="boton-agregar">Agregar a Favoritos</button>
         </div>
       </section>
       <section id="sec_paginador_peliculas">

@@ -1,0 +1,23 @@
+form {
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    
+}
+
+#mensaje {
+    height: 100px;
+}
+
+#divBotones {
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+form button {
+    margin-right: 15px;
+    background-color: rgb(51, 116, 89);
+    color: white;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+}
