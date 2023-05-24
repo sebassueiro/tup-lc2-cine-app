@@ -21,3 +21,14 @@ form button {
     border-radius: 7px;
     padding: 5px 10px 5px 10px;
 }
+
+ #sec-cine-result p {
+    color: white;
+    background-color:#E83845 ;
+    width: 500px;
+    text-align: center;
+    border-radius: 7px;
+    padding-top: 5;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
