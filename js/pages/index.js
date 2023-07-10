@@ -61,6 +61,7 @@ async function agregarPeliculaPorCodigo(codigo) {
   //Las condiciones para los Mensajes
   if (favorito.includes(codigo)) {
     mostrarMensaje('Warning');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     return;
   }
 
@@ -70,6 +71,7 @@ async function agregarPeliculaPorCodigo(codigo) {
 
   if (!peliculaExistente) {
     mostrarMensaje('Error');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     return;
   }
 
@@ -77,6 +79,7 @@ async function agregarPeliculaPorCodigo(codigo) {
   favorito.push(codigo);
   localStorage.setItem('codigoFav', JSON.stringify(favorito));
   mostrarMensaje('Success');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Función para agregar películas a favoritos por boton
